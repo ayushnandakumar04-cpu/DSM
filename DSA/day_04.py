@@ -15,3 +15,4 @@ for num in n:
     res.append(num*num)
 res.sort()
 print(res)
+
