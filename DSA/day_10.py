@@ -16,7 +16,6 @@ image = [
     [1, 1, 0],
     [1, 0, 1]
 ]
-
 sr = 1
 sc = 1
 new_color = 2
@@ -34,5 +33,5 @@ if old_color != new_color:
         stack.append((r - 1, c))
         stack.append((r, c + 1))
         stack.append((r, c - 1))
-
 print(image)
+
