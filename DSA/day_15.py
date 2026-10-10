@@ -29,3 +29,4 @@ for i in range(len(s)-len(p)+1):
     if sorted(anag)==sorted(p):
         result.append(i)
 print(result)
+
