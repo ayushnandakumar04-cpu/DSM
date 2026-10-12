@@ -26,5 +26,22 @@ for i in head:
         res.append(i)
 print(res)
 
+#first recursive character
 
-    
+s="recursive"
+lst=[]
+for char in s:
+    if char not in lst:
+        lst.append(char)
+    else:
+        print("first recursive character",char)
+        break
+
+#first non recursive character
+s="leetcode"
+for char in s:
+    if s.count(char)==1:
+        print(s.find(char))
+        break
+    else:
+        print("-1")
