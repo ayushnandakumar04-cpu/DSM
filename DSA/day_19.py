@@ -41,4 +41,18 @@ def backend(start,path):
 backend(0, [])
 print(res)
 
+#Last Stone Weight
+stone=[2,7,1,8,2,1]
 
+while len(stone)>1:
+    stone.sort()
+
+    first=stone.pop()
+    second=stone.pop()
+
+    if first!=second:
+        s=first-second
+        stone.append(s)
+        print(stone[0])
+    
+    
