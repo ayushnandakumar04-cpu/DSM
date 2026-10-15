@@ -18,5 +18,30 @@ res=[]
 
 for l in list:
     res+=l
+    
 res.sort()
 print(res)
+
+#Koko Eating Bananas
+
+pile=[3,4,6,11]
+h=9
+
+left=0
+right=max(pile)
+
+while left<right:
+    hr=(left+right)//2
+    hour=0
+
+    for p in pile:
+        hour+=(p+hr-1)//hr
+
+    if hour<=h:
+        right=hr
+    else:
+        left=hr+1
+print(left)
+
+
+    
