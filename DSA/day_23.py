@@ -52,4 +52,5 @@ def isBipartite(graph):
                         return False
 
     return True
-print(True)
+graph=[[1,3],[0,2],[1,3],[0,2]]
+print(isBipartite(graph))
