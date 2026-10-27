@@ -61,3 +61,27 @@ print(startsWith("app"))
 
 insert("app")
 print(search("app"))
+
+#Product of Array Except Self
+
+def product(nums):
+    s=len(nums)
+    res=[1]*s
+
+    pref=1
+
+    for i in range(s):
+        res[i]=pref
+        pref=pref*nums[i]
+
+    suf=1
+
+    for i in range(s -1,-1,-1):
+            res[i]=res[i]*suf
+            suf=suf*nums[i]
+
+    return res
+nums=[1,2,3,4,5,9]
+print(product(nums))
+
+   
