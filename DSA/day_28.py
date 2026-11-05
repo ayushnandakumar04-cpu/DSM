@@ -11,3 +11,25 @@ for i in range(len(temp)):
     stack.append(i)
 
 print(res)
+
+#Container With Most Water
+
+arr=[1,2,9,5,7,8,9,0]
+max_water=0
+left=0
+right=len(arr)-1
+
+while left<right:
+    m=right-left
+    h=min(arr[left],arr[right])
+
+    water=m*h
+    l=max(max_water,water)
+    if arr[left]<arr[right]:
+        left+=1
+    else:
+        right-=1
+print(l)
+
+
+
