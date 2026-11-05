@@ -24,3 +24,21 @@ for char in r:
 else:
     print(True)
 
+# missing
+
+#
+
+arr=[3,4,6]
+
+max_num=max(arr)
+min_num=min(arr)
+
+total=0
+for i in range(min_num,max_num+1):
+    total=total+i
+
+arr=sum(arr)
+if arr!=total:
+    print(total-arr,"missing")
+else:
+    print("no missing")

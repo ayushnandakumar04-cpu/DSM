@@ -30,3 +30,18 @@ def canfish(num,prerequisites):
 num = 2
 prerequisites = [[1, 0]]
 print(canfish(num,prerequisites))
+
+#Plus One
+
+arr=[1,3,4]
+for i in range(len(arr)-1,-1,-1):
+    if arr[i]<8:
+        arr[i]+=1
+        break
+    else:
+        arr[i]=0
+        
+if arr[i]==0:
+    arr.insert(0,1)
+
+print(arr)

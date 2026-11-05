@@ -20,3 +20,14 @@ if d == d[::-1]:
     print("valid")
 else:
     print("not valid")
+
+#two pair sum
+
+num=[1,2,3,4]
+tar=6
+
+for n in num:
+    diff =tar-n
+
+if diff in num :
+    print(diff,n)

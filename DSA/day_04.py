@@ -16,3 +16,24 @@ for num in n:
 res.sort()
 print(res)
 
+#first recursive
+
+s="leet"
+lst=[]
+
+for char in s:
+    if char not in lst:
+        lst.append(char)
+    else:
+        print("first recursive char",char)
+        break
+
+#first non recursive
+
+s='leet'
+for char in s:
+    if s.count(char)==1:
+        print(s.find(char))
+        break
+    else:
+        print("-1")

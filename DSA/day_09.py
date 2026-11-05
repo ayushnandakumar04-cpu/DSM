@@ -43,3 +43,21 @@ for i in brackets:
         print(False)
         break
 print(len(stack)==0)
+
+#can you positive missing num
+
+s=[1,2,4]
+min=0
+max_num=max(s)
+total=0
+for i in range(min,max_num+1):
+   total=total+i
+
+   arr_sum=sum(s)
+if total!=arr_sum:
+    d=total-arr_sum
+    print(d)
+else:
+    print("no missing")
+
+
