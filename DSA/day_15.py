@@ -19,14 +19,15 @@ print(maximum)
 
 #Find All Anagrams in a String
 
-s="cbabcde"
-p="abc"
+a="cbabcsd"
+d="abc"
+res=[]
 
-result=[]
-for i in range(len(s)-len(p)+1):
-    anag=s[i:i+len(p)]
+for i in range(len(a)-len(d)+1):
+    ana=a[i:i+len(d)]
 
-    if sorted(anag)==sorted(p):
-        result.append(i)
-print(result)
+    if sorted(ana)==sorted(d):
+        res.append(i)
+print(res)
+
 
