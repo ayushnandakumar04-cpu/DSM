@@ -25,4 +25,33 @@ else:
               else:
                   t_dict[t[i]]=s[i]
 print(res)
-                  
+
+# Zigzag Conversion
+
+s="PAYPHSADBTYION"
+num=3
+
+if num==1 or num>=len(s):
+    print(s)
+else:
+    r=[""]*num
+    current=0
+    direction=1
+
+    for c in s:
+        r[current]+=c
+
+        if current==0:
+            direction=1
+        elif current==num-1:
+            direction=-1
+
+        current+=direction
+
+        result=""
+    for row in r:
+        result+=row
+    print(result)
+
+
+
